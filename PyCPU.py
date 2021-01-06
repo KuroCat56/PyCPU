@@ -84,14 +84,14 @@ def attack():
 #Move to left
 to_left()
 #Number of scrolls = j -1
-while j < 8:
+while j < 2:
   start_pos()
   next_pos()
   upgrade()
   scroll()
   j += 1
-print('WAITING 12 sec...')
+print('WAITING 12 sec...') #Waiting for the units to destroy the base
 time.sleep(12)
-rerun()
+rerun() #Pressing again the Attack button
 time.sleep(5)
 attack()
